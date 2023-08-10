@@ -1,5 +1,4 @@
 import clientPromise from "@libs/mongodb";
-import Post from "@models/post";
 import {ObjectId} from 'mongodb'
 export default async function handler(req, res) {
   const { id } = req.query;

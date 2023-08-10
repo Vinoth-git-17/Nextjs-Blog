@@ -1,19 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Spiral as Hamburger} from "hamburger-react";
 import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
     const [fix, setfixed] = useState(false)
-    window.addEventListener("scroll", ()=>{
-      let offset = window.scrollY
-        if((offset)>5){
-          setfixed(true)
-        }
-        else{
-            setfixed(false)
-        }
-    })
+    useEffect(()=>{
+      window.addEventListener("scroll", ()=>{
+        let offset = window.scrollY
+          if((offset)>5){
+            setfixed(true)
+          }
+          else{
+              setfixed(false)
+          }
+      })
+    },[])
+    
   return (
     <>
       <nav className={ fix ? 'fixed px-[15%] py-[2%]  mb-12 bg-glass w-full': " px-[15%] py-[2%]  mb-12 bg-glass"}>
