@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-gradient{
+   
+    background-color: rgb(229, 231, 235);
+    background-image: radial-gradient(at 94% 4%, rgb(198, 204, 198) 0, transparent 47%), radial-gradient(at 86% 53%, rgb(52, 211, 153) 0, transparent 61%), radial-gradient(at 73% 42%, rgb(255, 255, 255) 0, transparent 66%), radial-gradient(at 21% 92%, rgb(21, 128, 61) 0, transparent 22%), radial-gradient(at 88% 84%, rgb(254, 243, 199) 0, transparent 76%), radial-gradient(at 29% 57%, rgb(212, 212, 216) 0, transparent 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+}
+
+.bg-glass{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.32);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
