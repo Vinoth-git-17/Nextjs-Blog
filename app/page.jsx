@@ -4,7 +4,9 @@ import Posts from "@components/Posts"
 const Home =  () => {
    
    return(    
-    <Posts  />
+    //deploying
+    <h1> Hello NextJs</h1>
+    // <Posts  />
    )
 }
 export default Home;
