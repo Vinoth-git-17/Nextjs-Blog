@@ -3,7 +3,8 @@ import Posts from "@components/Posts"
 
 const Home =  () => {
    return(
-    <Posts/>
+      <h1>Hello</h1>
+   //  <Posts/>
    )
 }
 export default Home;

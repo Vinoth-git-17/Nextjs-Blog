@@ -4,7 +4,7 @@ import { faPenToSquare, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import RemoveBtn from "@components/RemoveBtn"
 import Link from "next/link";
 
-async function getData() {
+export const getStaticProps= async ()=>{
   const API_URL = process.env.API_URL
   const res = await fetch(`${API_URL}/api/posts`, {
     cache: "no-store",
@@ -13,11 +13,12 @@ async function getData() {
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
-
-  return res.json();
+  
+  return res.json()
 }
-const Posts = async () => {
-  const allPosts = await getData();
+const Posts = async() => {
+  const allPosts = await getStaticProps();
+   
 
   return (
     <section className="mb-[10%]">
