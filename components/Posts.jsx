@@ -1,28 +1,16 @@
+'use client'
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import RemoveBtn from "@components/RemoveBtn"
 import Link from "next/link";
 
-export const getStaticProps= async ()=>{
-  const API_URL = process.env.API_URL
-  const res = await fetch(`${API_URL}/api/posts`, {
-    cache: "no-store",
-  });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  
-  return res.json()
-}
-const Posts = async() => {
-  const allPosts = await getStaticProps();
-   
-
+const Posts = ({posts}) => {
+ 
   return (
     <section className="mb-[10%]">
-      {allPosts.data.map((Post) => (
+      {posts.data.map((Post) => (
         <div className="flex justify-between px-[15%] py-[4%] " key={Post._id}>
           <div>
             <h1 className="font-bold text-2xl mb-5">{Post.title}</h1>

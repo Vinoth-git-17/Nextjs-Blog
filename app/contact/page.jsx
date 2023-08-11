@@ -4,7 +4,7 @@ import Link from 'next/link'
 const {email, social_media} = contact
 const Contact = () => {
   return (
-    <div className="px-[15%] py-[2%] mb-[80%] md:mb-[30%]">
+    <div className="px-[15%] py-[2%] mb-[0%] md:mb-[30%]">
       <h1 className="font-bold text-lg mb-5">CONTACT</h1>
       <div className='flex mt-10 gap-5'>
       <Link href={social_media.github}>
