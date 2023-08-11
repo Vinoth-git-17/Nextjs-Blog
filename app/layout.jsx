@@ -3,7 +3,7 @@ import Navbar from '@components/Navbar'
 import Footer from "@components/Footer"
 
 export const metadata = {
-  title: 'Blog ',
+  title: 'Blog Site ',
   description: 'Create a post with your ideas',
 }
 

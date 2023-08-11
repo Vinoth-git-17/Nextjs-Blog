@@ -1,12 +1,25 @@
-'use client'
+
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import RemoveBtn from "@components/RemoveBtn"
 import Link from "next/link";
 
+export const getData= async ()=>{
+  const API_URL = process.env.API_URL
+  const res = await fetch(`${API_URL}/api/posts`, {
+    cache: "no-store",
+  });
 
-const Posts = ({posts}) => {
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+ return res.json()
+}
+
+
+const Posts = async() => {
+  const posts = await getData();
  
   return (
     <section className="mb-[10%]">
