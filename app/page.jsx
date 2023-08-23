@@ -5,7 +5,7 @@ const Home =  () => {
    
    return(    
     //deploying check
-    // <h1> Hello NextJs</h1>
+   //  <h1> Hello NextJs</h1>
     <Posts  />
    )
 }

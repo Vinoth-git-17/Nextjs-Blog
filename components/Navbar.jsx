@@ -19,8 +19,8 @@ const Navbar = () => {
     
   return (
     <>
-      <nav className={ fix ? 'fixed px-[15%] py-[2%]  mb-12 bg-glass w-full': " px-[15%] py-[2%]  mb-12 bg-glass"}>
-        <div className="flex justify-between">
+      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full': " bg-glass py-[2%] mb-12 "}>
+        <div className="flex justify-between px-[15%]">
           <div className="">
             <p className="mt-3 font-bold text-xl md:mt-0 ">DAILY JOURNAL</p>
           </div>
@@ -38,18 +38,19 @@ const Navbar = () => {
               <Link href="/compose">COMPOSE</Link>
             </li>
           </ul>
-          {/* mobile menu */}
-          <div className=" md:hidden ">
+          
+        
+        {/* mobile menu */}
+        <div className=" md:hidden ">
             <Hamburger
               toggled={isOpen}
               size={30}
               toggle={() => setOpen(!isOpen)}
-            />
-           
+            /> 
           </div>
         </div>
-      </nav>
-      <div className={isOpen ? "absolute top-[69.5px] w-[100%] text-center font-bold p-10 bg-glass": "hidden"}>
+        <div className={ isOpen ? " w-[100%] text-left px-[15%] py-12 font-bold": "hidden " }>
+         
               <ul className="flex flex-col gap-y-10" onClick={()=>setOpen(!isOpen)}>
                 <li id="home" className="hover:opacity-50 ">
                   <Link href="/">HOME</Link>
@@ -64,7 +65,11 @@ const Navbar = () => {
                   <Link href="/compose">COMPOSE</Link>
                 </li>
               </ul>
-      </div>
+
+          </div>
+          
+      </nav>
+      
     </>
   );
 };
