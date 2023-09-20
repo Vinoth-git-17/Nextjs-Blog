@@ -33,7 +33,7 @@ const Form = () => {
     });
   }
   return (
-    <div className="px-[15%] py-[4%] mb-[20%] ">
+    <div className="px-[15%] py-[4%] mb-[50%] md:mb-[10%] ">
     <h1 className="font-bold text-lg mb-5">COMPOSE</h1>
    
         <div className="flex flex-col gap-y-2 ">

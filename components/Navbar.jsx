@@ -8,7 +8,7 @@ const Navbar = () => {
     useEffect(()=>{
       window.addEventListener("scroll", ()=>{
         let offset = window.scrollY
-          if((offset)>5){
+          if(offset){
             setfixed(true)
           }
           else{
@@ -19,7 +19,7 @@ const Navbar = () => {
     
   return (
     <>
-      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full': " bg-glass py-[2%] mb-12 "}>
+      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full': "bg-glass  py-[2%] mb-12 "}>
         <div className="flex justify-between px-[15%]">
           <div className="">
             <p className="mt-3 font-bold text-xl md:mt-0 ">DAILY JOURNAL</p>
