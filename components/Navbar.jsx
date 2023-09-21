@@ -19,7 +19,7 @@ const Navbar = () => {
     
   return (
     <>
-      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full z-10': "bg-glass  py-[2%] mb-12 "}>
+      <nav className={ fix ? 'sticky top-0 py-[2%]  mb-12 bg-glass w-full z-10': "bg-glass  py-[2%] mb-12 "}>
         <div className="flex justify-between px-[15%]">
           <div >
             <p className="mt-3 font-bold text-xl md:mt-0 ">DAILY JOURNAL</p>
