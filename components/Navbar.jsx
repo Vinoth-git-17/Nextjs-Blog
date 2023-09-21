@@ -19,9 +19,9 @@ const Navbar = () => {
     
   return (
     <>
-      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full': "bg-glass  py-[2%] mb-12 "}>
+      <nav className={ fix ? 'fixed py-[2%]  mb-12 bg-glass w-full z-10': "bg-glass  py-[2%] mb-12 "}>
         <div className="flex justify-between px-[15%]">
-          <div className="">
+          <div >
             <p className="mt-3 font-bold text-xl md:mt-0 ">DAILY JOURNAL</p>
           </div>
           <ul className="hidden md:flex gap-x-10 text-sm font-medium">
@@ -49,10 +49,10 @@ const Navbar = () => {
             /> 
           </div>
         </div>
-        <div className={ isOpen ? " w-[100%] text-left px-[15%] py-12 font-bold": "hidden " }>
+        <div className={ isOpen ? " w-[100%] h-screen text-left px-[15%] py-12 font-bold": "hidden " }>
          
-              <ul className="flex flex-col gap-y-10" onClick={()=>setOpen(!isOpen)}>
-                <li id="home" className="hover:opacity-50 ">
+              <ul className="flex flex-col gap-y-10 " onClick={()=>setOpen(!isOpen)}>
+                <li id="home" className="hover:opacity-50 animate-fade">
                   <Link href="/">HOME</Link>
                 </li>
                 <li id="about" className="hover:opacity-50 ">

@@ -25,3 +25,24 @@ backdrop-filter: blur(8.1px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+h1,h3{
+    animation: fadeX 3s ease;
+    animation-timeline: view();
+}
+
+@keyframes fadeX{
+    from{
+      opacity: 0;
+      
+     
+
+      
+  }
+    to {
+      opacity:100;
+      
+
+      
+      
+  }
+  }
