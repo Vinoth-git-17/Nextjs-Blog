@@ -3,7 +3,6 @@ import { contact } from "@public/static/data.js";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { Github } from "lucide-react";
 const { email, github,linkedin, instagram } = contact;
 
 function Icons(link, Iname, name) {
