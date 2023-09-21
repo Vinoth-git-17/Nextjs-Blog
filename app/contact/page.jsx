@@ -1,5 +1,5 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { contact } from "@public/Static/data.js";
+import { contact } from "@public/static/data.js";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
