@@ -1,4 +1,4 @@
-import {about} from "@public/static/data.js"
+import {about} from "@public/Static/data.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPenToSquare, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const {name, description, website} = about
