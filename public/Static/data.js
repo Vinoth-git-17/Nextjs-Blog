@@ -3,7 +3,7 @@ const about = {
       "name": " Vinoth",
       "description": "Passionate about technology and creativity. Enthusiastic learner and problem solver.",
       "interests": ["Programming", "Webdevelopment", "Music", "technology"], 
-      "website": "https://devvino.netlify.app/",  
+      "website": "https://vinoth-git-17.github.io/portfolio/",  
     }
 
 const contact ={     
